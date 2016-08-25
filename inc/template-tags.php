@@ -120,3 +120,16 @@ function gibby_category_transient_flusher() {
 }
 add_action( 'edit_category', 'gibby_category_transient_flusher' );
 add_action( 'save_post',     'gibby_category_transient_flusher' );
+
+/**
+ * Displays the optional custom logo.
+ *
+ * Does nothing if the custom logo is not available
+ *
+ * @since gibby 1.0
+ */
+ function gibby_the_custom_logo() {
+	 if ( function_exists( 'the_custom_logo') ) {
+		 the_custom_logo();
+	 }
+ }
