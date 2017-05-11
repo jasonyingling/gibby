@@ -1,6 +1,6 @@
 <?php
 /**
- * gibby Theme Customizer.
+ * gibby Theme Customizer
  *
  * @package gibby
  */
