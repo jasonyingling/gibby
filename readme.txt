@@ -25,7 +25,7 @@ Hi. I'm a starter theme called gibby, or underscores, if you like. I'm a theme m
 
 = Does this theme support any plugins? =
 
-_s includes support for Infinite Scroll in Jetpack.
+gibby includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 

@@ -20,7 +20,7 @@ if ( ! function_exists( 'gibby_setup' ) ) :
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on _s, use a find and replace
-		 * to change '_s' to the name of your theme in all the template files.
+		 * to change 'gibby' to the name of your theme in all the template files.
 		 */
 		load_theme_textdomain( 'gibby', get_template_directory() . '/languages' );
 
@@ -128,6 +128,14 @@ function gibby_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'gibby_scripts' );
+
+/**
+ * Registers an editor stylesheet for the theme.
+ */
+function gibby_theme_add_editor_styles() {
+    add_editor_style( 'editor-style.css' );
+}
+add_action( 'admin_init', 'gibby_theme_add_editor_styles' );
 
 /**
  * Implement the Custom Header feature.
