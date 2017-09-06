@@ -31,9 +31,9 @@ add_filter( 'body_class', 'gibby_body_classes' );
 /**
  * Add a pingback url auto-discovery header for singularly identifiable articles.
  */
-function _s_pingback_header() {
+function gibby_pingback_header() {
 	if ( is_singular() && pings_open() ) {
 		echo '<link rel="pingback" href="', esc_url( get_bloginfo( 'pingback_url' ) ), '">';
 	}
 }
-add_action( 'wp_head', '_s_pingback_header' );
+add_action( 'wp_head', 'gibby_pingback_header' );
