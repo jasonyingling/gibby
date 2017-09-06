@@ -4,10 +4,11 @@ Theme URI: https://github.com/yingles/gibby
 Author: Jason Yingling
 Author URI: http://jasonyingling.me
 Description: I'm a starter theme called <code>gibby</code>. I'm based off of <em>underscores</em> by Automattic. What's the difference? I've got a little bourbon in me.
+Version: 1.0.0
 License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: LICENSE
 Text Domain: gibby
-Tags:
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -16,7 +17,7 @@ gibby is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, 
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 */
 
 /*--------------------------------------------------------------
@@ -51,7 +52,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # FontAwesome
 --------------------------------------------------------------*/
-@import "libs/font-awesome/font-awesome"; 
+@import "libs/font-awesome/font-awesome";
 
 /*--------------------------------------------------------------
 # Variables Site and Mixins

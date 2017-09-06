@@ -27,4 +27,4 @@
 	<footer class="entry-footer">
 		<?php gibby_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+</article><!-- #post-<?php the_ID(); ?> -->
