@@ -14,3 +14,28 @@
 	clear: both;
 	@include center-block;
 }
+
+.alignfull,
+.alignwide {
+	width: 100vw;
+    margin-left: 50%;
+	transform: translateX(-50%);
+	max-width: none;
+
+	img {
+		width: 100%;
+	}
+}
+
+.alignwide {
+	@media #{$break-medium} {
+		max-width: 100%;
+	}
+
+	@media #{$break-large} {
+		width: 75vw;
+    	margin-left: 50%;
+		transform: translateX(-50%);
+		max-width: none;
+	}
+}

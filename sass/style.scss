@@ -1,9 +1,9 @@
 /*!
 Theme Name: gibby
-Theme URI: https://github.com/yingles/gibby
-Author: Jason Yingling
-Author URI: http://jasonyingling.me
-Description: I'm a starter theme called <code>gibby</code>. I'm based off of <em>underscores</em> by Automattic. What's the difference? I've got a little bourbon in me.
+Theme URI: https://themes.pizza
+Author: yingling017
+Author URI: https://jasonyingling.me
+Description: A Gutenberg starter based of _s
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -13,11 +13,11 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-gibby is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+legit is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
 /*--------------------------------------------------------------
@@ -41,21 +41,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Media
 	## Captions
 	## Galleries
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Bourbon
---------------------------------------------------------------*/
-@import "libs/bourbon/bourbon";
-@import "libs/neat/neat";
-
-/*--------------------------------------------------------------
-# FontAwesome
---------------------------------------------------------------*/
-@import "libs/font-awesome/font-awesome";
-
-/*--------------------------------------------------------------
-# Variables Site and Mixins
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";

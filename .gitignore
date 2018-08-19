@@ -17,6 +17,7 @@ wp-content/plugins/hello.php
 /license.txt
 
 config.codekit
+_codekit-cache
 .sass-cache
 node_modules
 bower_components

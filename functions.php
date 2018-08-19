@@ -1,6 +1,6 @@
 <?php
 /**
- * gibby functions and definitions.
+ * gibby functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
@@ -19,7 +19,7 @@ if ( ! function_exists( 'gibby_setup' ) ) :
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on _s, use a find and replace
+		 * If you're building a theme based on gibby, use a find and replace
 		 * to change 'gibby' to the name of your theme in all the template files.
 		 */
 		load_theme_textdomain( 'gibby', get_template_directory() . '/languages' );
@@ -79,6 +79,16 @@ if ( ! function_exists( 'gibby_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
+
+		/**
+		 * Add support for Gutenberg wide and full image alignments
+		 */
+		add_theme_support( 'align-wide' );
+
+		/**
+		 * Add support for core block styles
+		 */
+		add_theme_support( 'wp-block-styles' );
 	}
 endif;
 add_action( 'after_setup_theme', 'gibby_setup' );
@@ -91,6 +101,9 @@ add_action( 'after_setup_theme', 'gibby_setup' );
  * @global int $content_width
  */
 function gibby_content_width() {
+	// This variable is intended to be overruled from themes.
+	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
+	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
 	$GLOBALS['content_width'] = apply_filters( 'gibby_content_width', 640 );
 }
 add_action( 'after_setup_theme', 'gibby_content_width', 0 );
@@ -128,14 +141,6 @@ function gibby_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'gibby_scripts' );
-
-/**
- * Registers an editor stylesheet for the theme.
- */
-function gibby_theme_add_editor_styles() {
-    add_editor_style( 'editor-style.css' );
-}
-add_action( 'admin_init', 'gibby_theme_add_editor_styles' );
 
 /**
  * Implement the Custom Header feature.
