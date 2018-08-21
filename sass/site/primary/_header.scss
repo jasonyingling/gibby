@@ -1,0 +1,25 @@
+.site-header {
+	@media #{$break-small} {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+
+		.site-branding {
+			flex: 1 0 auto;
+		}
+
+		.main-navigation {
+			flex: 0 1 auto;
+		}
+	}
+}
+
+.site-search {
+	width: 100%;
+}
+
+.site-search {
+	display: none;
+    width: 100%;
+}

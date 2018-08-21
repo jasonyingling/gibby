@@ -10,12 +10,19 @@
 	display: none;
 }
 
+.entry-header,
+.entry-footer {
+	margin: 1em auto;
+	padding: 0 2.5em;
+	max-width: $size__content;
+}
+
 .page-content,
 .entry-content,
 .entry-summary {
 	margin: 1.5em auto 0;
 	padding: 0 2.5em;
-	max-width: 780px;
+	max-width: $size__content;
 }
 
 .page-links {

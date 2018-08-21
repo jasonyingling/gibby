@@ -1,8 +1,4 @@
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
 
 	ul {
 		display: none;
@@ -76,7 +72,7 @@
 	display: block;
 }
 
-@media screen and (min-width: 37.5em) {
+@media #{$break-small} {
 	.menu-toggle {
 		display: none;
 	}

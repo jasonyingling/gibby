@@ -1,0 +1,16 @@
+/* Main column width */
+body.gutenberg-editor-page .editor-post-title__block,
+body.gutenberg-editor-page .editor-default-block-appender,
+body.gutenberg-editor-page .editor-block-list__block {
+    max-width: 700px;
+}
+
+/* Width of "wide" blocks */
+body.gutenberg-editor-page .editor-block-list__block[data-align="wide"] {
+    max-width: $size__content-large;
+}
+
+/*--------------------------------------------------------------
+# Editor Styles
+--------------------------------------------------------------*/
+@import 'alignments';

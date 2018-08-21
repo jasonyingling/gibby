@@ -25,6 +25,10 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'gibby' ); ?></a>
 
 	<header id="masthead" class="site-header">
+		<div class="site-search js-site-search">
+			<?php get_search_form(); ?>
+		</div><!-- .site-search -->
+
 		<div class="site-branding">
 			<?php
 			the_custom_logo();

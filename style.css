@@ -3,7 +3,7 @@ Theme Name: gibby
 Theme URI: https://themes.pizza
 Author: yingling017
 Author URI: https://jasonyingling.me
-Description: A Gutenberg starter based of _s
+Description: A Gutenberg powered WordPress theme for blogging and writing.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -13,7 +13,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-legit is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+gibby is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -551,40 +551,37 @@ a {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
-  .main-navigation ul {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 100%;
-      left: -999em;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999em;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
+.main-navigation ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding-left: 0; }
+  .main-navigation ul ul {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
     float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
+    position: absolute;
+    top: 100%;
+    left: -999em;
+    z-index: 99999; }
+    .main-navigation ul ul ul {
+      left: -999em;
+      top: 0; }
+    .main-navigation ul ul li:hover > ul,
+    .main-navigation ul ul li.focus > ul {
+      left: 100%; }
+    .main-navigation ul ul a {
+      width: 200px; }
+  .main-navigation ul li:hover > ul,
+  .main-navigation ul li.focus > ul {
+    left: auto; }
+
+.main-navigation li {
+  float: left;
+  position: relative; }
+
+.main-navigation a {
+  display: block;
+  text-decoration: none; }
 
 /* Small menu. */
 .menu-toggle,
@@ -686,16 +683,34 @@ a {
   .alignwide img {
     width: 100%; }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .alignwide {
     max-width: 100%; } }
 
-@media only screen and (min-width: 960px) {
+@media screen and (min-width: 960px) {
   .alignwide {
-    width: 75vw;
+    width: 960px;
     margin-left: 50%;
     transform: translateX(-50%);
     max-width: none; } }
+
+.wp-block-cover-image.alignleft,
+.wp-block-cover-image.alignright,
+.wp-block-embed.alignleft,
+.wp-block-embed.alignright,
+.wp-block-pullquote.alignleft,
+.wp-block-pullquote.alignright {
+  max-width: 100%;
+  width: 100%; }
+  @media screen and (min-width: 37.5em) {
+    .wp-block-cover-image.alignleft,
+    .wp-block-cover-image.alignright,
+    .wp-block-embed.alignleft,
+    .wp-block-embed.alignright,
+    .wp-block-pullquote.alignleft,
+    .wp-block-pullquote.alignright {
+      max-width: 45%;
+      width: 100%; } }
 
 /*--------------------------------------------------------------
 # Clearings
@@ -727,6 +742,12 @@ a {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+.widget-area {
+  margin: 1.5em auto 0; }
+  .widget-area .widget {
+    padding: 0 2.5em;
+    max-width: 960px; }
+
 .widget {
   margin: 0 0 1.5em;
   /* Make sure select elements fit in widgets. */ }
@@ -736,6 +757,27 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+@media screen and (min-width: 37.5em) {
+  .site-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; }
+    .site-header .site-branding {
+      flex: 1 0 auto; }
+    .site-header .main-navigation {
+      flex: 0 1 auto; } }
+
+.site-search {
+  width: 100%; }
+
+.site-search {
+  display: none;
+  width: 100%; }
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -747,6 +789,12 @@ a {
 
 .updated:not(.published) {
   display: none; }
+
+.entry-header,
+.entry-footer {
+  margin: 1em auto;
+  padding: 0 2.5em;
+  max-width: 780px; }
 
 .page-content,
 .entry-content,
@@ -767,6 +815,70 @@ a {
 
 .bypostauthor {
   display: block; }
+
+/*--------------------------------------------------------------
+# Gutenberg
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Alignments - .alignwide, .alignfull
+--------------------------------------------------------------*/
+.alignfull,
+.alignwide {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  max-width: none; }
+  .alignfull img,
+  .alignwide img {
+    width: 100%; }
+
+@media screen and (min-width: 768px) {
+  .alignwide {
+    max-width: 100%; } }
+
+@media screen and (min-width: 960px) {
+  .alignwide {
+    width: 960px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    max-width: none; } }
+
+.wp-block-cover-image.alignleft,
+.wp-block-cover-image.alignright,
+.wp-block-embed.alignleft,
+.wp-block-embed.alignright,
+.wp-block-pullquote.alignleft,
+.wp-block-pullquote.alignright {
+  max-width: 100%;
+  width: 100%; }
+  @media screen and (min-width: 37.5em) {
+    .wp-block-cover-image.alignleft,
+    .wp-block-cover-image.alignright,
+    .wp-block-embed.alignleft,
+    .wp-block-embed.alignright,
+    .wp-block-pullquote.alignleft,
+    .wp-block-pullquote.alignright {
+      max-width: 45%;
+      width: 100%; } }
+
+/*--------------------------------------------------------------
+# Core Blocks
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Audio Block
+--------------------------------------------------------------*/
+.wp-block-audio audio {
+  width: 100%; }
+
+/*--------------------------------------------------------------
+## Pull Quote Block
+--------------------------------------------------------------*/
+.wp-block-pullquote {
+  margin-bottom: 1.5em; }
+  .wp-block-pullquote.alignleft {
+    margin-left: 0; }
+  .wp-block-pullquote.alignright {
+    margin-right: 0; }
 
 /*--------------------------------------------------------------
 # Infinite scroll
@@ -848,3 +960,5 @@ object {
 
 .gallery-caption {
   display: block; }
+
+/*# sourceMappingURL=style.css.map */

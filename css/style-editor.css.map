@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "style-editor.css",
+	"sources": [
+		"../sass/style-editor.scss",
+		"../sass/variables-site/_variables-site.scss",
+		"../sass/variables-site/_colors.scss",
+		"../sass/variables-site/_typography.scss",
+		"../sass/variables-site/_structure.scss",
+		"../sass/variables-site/_columns.scss",
+		"../sass/site/gutenberg/editor/_editor.scss",
+		"../sass/site/gutenberg/editor/_alignments.scss"
+	],
+	"names": [],
+	"mappings": "AAAA;;gEAEgE;AAGhE;;gEAEgE;AMPhE,uBAAuB;AACvB,AAAA,IAAI,AAAA,sBAAsB,CAAC,yBAAyB;AACpD,IAAI,AAAA,sBAAsB,CAAC,8BAA8B;AACzD,IAAI,AAAA,sBAAsB,CAAC,yBAAyB,CAAC;EACjD,SAAS,EAAE,KAAK,GACnB;;AAED,4BAA4B;AAC5B,AAAA,IAAI,AAAA,sBAAsB,CAAC,yBAAyB,CAAA,AAAA,UAAC,CAAW,MAAM,AAAjB,EAAmB;EACpE,SAAS,EFNS,KAAK,GEO1B;;AAED;;gEAEgE"
+}
