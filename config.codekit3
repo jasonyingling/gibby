@@ -260,12 +260,12 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/js\/gibby.js": {
+	"\/js\/main.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/js\/min\/gibby-min.js",
+		"oAP": "\/js\/min\/main-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -280,12 +280,12 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/js\/min\/gibby-min.js": {
+	"\/js\/min\/legit-min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/js\/min\/min\/gibby-min-min.js",
+		"oAP": "\/js\/min\/min\/legit-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -383,13 +383,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/phpcs.xml.dist",
-		"oF": 0
-		},
-	"\/README.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/README.html",
 		"oF": 0
 		},
 	"\/README.md": {

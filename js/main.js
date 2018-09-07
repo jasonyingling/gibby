@@ -2,7 +2,7 @@ jQuery(document).ready(function ($) {
     
     // Fitvids
     function fitVids() {
-        $('.post').fitVids();
+        $('.entry-content').fitVids();
     }
     fitVids();
 

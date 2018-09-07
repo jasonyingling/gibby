@@ -4,8 +4,8 @@ Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 Requires at least: 4.5
-Tested up to: 4.8
-Stable tag: 2.0.0
+Tested up to: 4.9.8
+Stable tag: 2.0.2
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -28,6 +28,13 @@ Hi. I'm a starter theme called gibby. I'm a theme meant for hacking so don't use
 gibby includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
+
+= 2.0.2 - September 7 2018 =
+* Adjusting image alignment styles for Gutenberg
+* Fixing fitVids integration
+
+= 2.0.1 - August 21 2018 =
+* Removing console.log
 
 = 2.0.0 - August 20 2018 =
 * Adding Gutenberg compatibility

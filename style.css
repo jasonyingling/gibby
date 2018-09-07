@@ -3,8 +3,8 @@ Theme Name: gibby
 Theme URI: https://themes.pizza
 Author: yingling017
 Author URI: https://jasonyingling.me
-Description: A Gutenberg powered WordPress theme for blogging and writing.
-Version: 1.0.0
+Description: A Gutenberg powered starter.
+Version: 2.0.2
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: gibby
@@ -712,6 +712,12 @@ a {
       max-width: 45%;
       width: 100%; } }
 
+.wp-block-image.alignleft {
+  margin-right: 1.5em; }
+
+.wp-block-image.alignright {
+  margin-left: 1.5em; }
+
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
@@ -860,6 +866,12 @@ a {
     .wp-block-pullquote.alignright {
       max-width: 45%;
       width: 100%; } }
+
+.wp-block-image.alignleft {
+  margin-right: 1.5em; }
+
+.wp-block-image.alignright {
+  margin-left: 1.5em; }
 
 /*--------------------------------------------------------------
 # Core Blocks
